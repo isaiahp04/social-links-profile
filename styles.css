@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    color: white;
+    font-family: "Inter";
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: hsl(0, 0%, 12%);
+    width: 304px;
+    height: 531px;
+    font-size: 14px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.profile {
+    height: 216px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 88px;
+    height: 88px;
+    border-radius: 100%;
+}
+
+.name-location {
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.location {
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;  
+    letter-spacing: 0.05px; 
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 289px;
+}
+
+.social-link-button {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 14px;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    width: 304px;
+    height: 45px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.social-link-button:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 20%)
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 279px;
+        height: 531px;
+        padding: 24px;
+    }
+        
+    .social-links {
+        height: 289px;
+    }
+    
+    .social-link-button {
+        width: 279px;
+        height: 45px;
+    }
+}
